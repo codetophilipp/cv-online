@@ -1,0 +1,138 @@
+body {
+	background: #DCDCDC;
+}
+
+p {
+	text-indent: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.navbar-cor {
+	background: #4682B4;
+}
+
+.fundo-topo {
+	margin-top: 50px;
+	background: linear-gradient(#4682B4, #00BFFF);
+	height: 250px;
+}
+
+.container-foto {
+	background: #1C1C1C;
+	height: wrap;
+	margin-top: 70px;
+}
+
+.imgProfile {
+	padding: 40px;
+	max-width:300px;
+}
+
+.nomeProfile{
+	font-family: 'Sacramento', cursive;
+	color: white;
+	font-size: 50px;
+	width: wrap;
+}
+
+.icone-container-foto {
+	margin: 10px;
+	width: 40px;
+}
+
+.container-icones {
+	padding: 10px;
+	padding-bottom: 20px;
+}
+
+.button-cv {
+	background-color: #00BFFF;
+	margin: 10px;
+	width: 130px;
+}
+
+.container-apresentacao {
+	padding: 20px;
+	background: #F8F8FF;
+	height: wrap;
+	margin-top: 250px;
+	font-size: 26px;
+	font-family: 'Kalam', cursive;
+}
+
+.container-apresentacao h3 {
+	padding: 20px;
+	margin-left: 25px;
+	margin-top: 50px;
+}
+
+.container-skills {
+	font-family: 'Indie Flower', cursive;
+	margin-top: 40px;
+	padding: 0px;
+	height: wrap;
+	box-shadow: 5px 5px 5px #4682B4;
+	font-size: 22px;
+}
+
+.tabelaSkills {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 30px;
+}
+
+.tabelaSkills thead {
+	font-size: 24px;
+}
+
+.tabela-gif-gato {
+	margin-left: 60px;
+	margin-top: 100px;
+}
+
+.container-cursos {
+	height: wrap;
+	margin-top: 50px;
+	font-family: 'Kalam', cursive;
+	font-size: 26px;	
+}
+
+.container-cursos thead {
+	text-align: center;
+	font-family: 'Kalam', cursive;
+	font-size: 28px;
+}
+
+.box-cursos {
+	background: #F8F8FF;
+	padding: 0px;
+	margin: 10px;
+	border-color: #4682B4;
+}
+
+.button-cursos {
+	background-color: #4682B4;
+	color: white;
+	padding: 3px;
+	width: 120px;
+}
+
+.footer {
+	background: #4682B4;
+	margin-top: 50px;
+	color: white;
+	text-transform: uppercase;
+}
+
+/* style mural.html */
+
+.container-mural {
+	margin-top: 100px;
+	box-shadow: 5px 5px 5px #4682B4;
+	padding: 10px;
+}
+
+.card-mural {
+	margin-top: 20px;
+}
