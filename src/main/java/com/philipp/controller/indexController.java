@@ -2,6 +2,7 @@ package com.philipp.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -31,6 +32,14 @@ public class indexController {
 		Iterable<Usuario> usuario = ur.findAll();
 		ModelAndView mv = new ModelAndView("mural");
 		mv.addObject("usuarios", usuario);
+		return mv;
+	}
+	
+	@RequestMapping(value="/mural-detalhes/{id}", method = RequestMethod.GET)
+	public ModelAndView detalhaMensagem(@PathVariable("id") Long id) {
+		Usuario usuario = ur.findById(id);
+		ModelAndView mv = new ModelAndView("mural-detalhes");
+		mv.addObject("usuario", usuario);
 		return mv;
 	}
 }
