@@ -8,28 +8,26 @@
     <!-- Gogle fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Indie+Flower&family=Kalam&family=Sacramento&display=swap" rel="stylesheet">
     <!-- CSS project file -->
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" type="text/css" th:href="@{/style/style.css}">
     <title>CV Philipp \o/ </title>
   </head>
   <body>
 
     <header>
       <nav class="navbar active fixed-top navbar-expand-sm navbar-light navbar-cor">
-        <a class="navbar-brand" href="#">HOME</a>
+        <a class="navbar-brand" href="/">HOME</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">Mural</a>
+              <a class="nav-link" href="/mural">Mural</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projeto</a>
+              <a class="nav-link" href="/projeto">Projeto</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="modal" data-target="#modal-contato" href="#">Contato</a>
-            </li>
+            
           </ul>
         </div>
       </nav>
@@ -40,8 +38,7 @@
         <div class="container container-mural">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item active">Posts</li>
-          <li class="breadcrumb-item"><a href="">Novo Post</a></li>
+          <li class="breadcrumb-item"><a href="/mural">Posts</a></li>
         </ol>
       </nav>
       <div class="card">
@@ -58,56 +55,9 @@
     </main>
 
     <footer>
-      <div class="footer-copyright text-center py-3 footer">© 2020 Copyright: PHILIPP SCHWAMBACH
+      <div class="footer-copyright text-center py-3 footer fixed-bottom">© 2020 Copyright: PHILIPP SCHWAMBACH
       </div>
     </footer>
-
-    <!-- Modal -->
-    <div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <dialog class="modal-content">
-          <header class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Entre em contato</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </header>
-          <main class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="formGroupExampleInput">Nome Completo</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite seu nome">
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlInput1">Endereço de Email</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@email.com">
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1">Deixe seu comentário</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Insira aqui seu comentário"></textarea>
-          </div>
-          <div class="form-group">
-            <table>
-              <tr>
-                <td><img src="whats.png"><label>(11) 9 8904-5454</label></td>
-                <td><img src="whats.png"><label>(51) 9 9322-8051</label></td>
-              </tr>
-              <tr>
-                <td><a href="http://linkedin.com/in/philippschwambach"><img src="linkedin.png" class="icone-container-foto"></a>
-                <a href="mailto:codetophilipp@gmail.com"><img src="gmail.png" class="icone-container-foto"></a>
-                <a href="https://github.com/codetophilipp"><img src="git.png" class="icone-container-foto"></a></td>
-              </tr>
-            </table>
-          </div>
-        </form>
-          </main>
-          <footer class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-            <button type="button" class="btn botao-cor-especial">Enviar</button>
-          </footer>
-        </dialog>
-      </div>
-    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

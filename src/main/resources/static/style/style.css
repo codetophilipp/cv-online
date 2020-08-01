@@ -10,6 +10,9 @@ p {
 
 .navbar-cor {
 	background: #4682B4;
+	padding-left: 10px;
+	padding-right: 10px;
+	
 }
 
 .fundo-topo {
@@ -135,4 +138,15 @@ p {
 
 .card-mural {
 	margin-top: 20px;
+}
+
+/* style projeto.html */
+
+.container-projeto {
+	padding: 40px;
+	background: #F8F8FF;
+	height: wrap;
+	margin-top: 100px ;
+	font-size: 26px;
+	font-family: 'Kalam', cursive;
 }

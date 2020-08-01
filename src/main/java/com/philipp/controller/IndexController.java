@@ -11,7 +11,7 @@ import com.philipp.model.Usuario;
 import com.philipp.repository.UsuarioRepository;
 
 @Controller
-public class indexController {
+public class IndexController {
 	
 	@Autowired
 	UsuarioRepository ur;
@@ -19,6 +19,11 @@ public class indexController {
 	@RequestMapping("/")
 	public String index() {
 		return "index";
+	}
+	
+	@RequestMapping("/projeto")
+	public String projeto() {
+		return "projeto";
 	}
 	
 	@RequestMapping(value="/mural", method = RequestMethod.POST)
